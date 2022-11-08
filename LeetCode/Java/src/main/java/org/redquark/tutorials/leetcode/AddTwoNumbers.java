@@ -42,8 +42,8 @@ public class AddTwoNumbers {
             }
             // For any other node
             else {
-                temp.next = node;
-                temp = temp.next;
+                temp.next = node;  // Add newly created node as next node 
+                temp = temp.next;  // We have processed current temp node, so assign temp.next (newly created node) for next iteration process 
             }
         }
         // After the last iteration, we will check if there is carry left
